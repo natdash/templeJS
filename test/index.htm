@@ -6,6 +6,32 @@
     <script type="text/javascript" src="../lib/jquery-1.11.2.min.js"></script>
     <script type="text/javascript" src="../lib/temple-0.1.js"></script>
     <script type="text/javascript" src="people.js"></script>
+    <style type="text/css">
+        body {
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 10pt;
+            color: #444;
+        }
+
+        .person {
+            border: 1px solid #eee;
+            border-radius: 5px;
+            padding: 1em;
+            background: #fafafa;
+        }
+
+        .skills {
+            font-size: 0.8em;
+            border: 1px solid #eee;
+            border-radius: 5px;
+            padding: 1em;
+            background: #f8f8f8;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
 </head>
 <body>
     <h1>
@@ -17,7 +43,7 @@
             <p data-value="value.Age"></p>
             <p data-htmlvalue="value.Bio"></p>
 
-            <div data-source="value.Skills">
+            <div class="skills" data-source="value.Skills" data-emptyclass="hidden">
                 <h2>
                     Skills
                 </h2>
@@ -27,7 +53,6 @@
                     <p data-value="value.Description"></p>
                 </template>
             </div>
-            <hr />
         </template>
     </div>
     <input type="button" value="Fill With Other People" onclick="$('#people').retemple(otherTestPeople)" />

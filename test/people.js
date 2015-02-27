@@ -26,6 +26,7 @@ var otherTestPeople =
 
 testPeople[0].Skills = [ new Skill('C#', 'C# .NET programming'), new Skill('PHP', 'PHP MVC programming') ];
 testPeople[1].Skills = [ new Skill('C++', 'C++ programming'), new Skill('JavaScript', 'JavaScript programming') ];
+testPeople[1].Skills = [ ];
 
 otherTestPeople[0].Skills = [ new Skill('Everything', 'Because he\'s John Carmack.') ];
 otherTestPeople[1].Skills = [ new Skill('Security', 'Steve is nuts about security.') ];
