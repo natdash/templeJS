@@ -8,5 +8,5 @@ function Person(name, age, bio)
 var testPeople =
 [
 	new Person('Nick Bedford', 27, 'Nick is a photographer.'),
-    new Person('Nathaniel Dash', 27, 'Nathaniel is a JavaScript programmer.')
+    new Person('Nathaniel Dash', 27, '<p>Nathaniel is a JavaScript programmer.</p><p>He also has a dog named Cooper.</p>')
 ];
