@@ -37,11 +37,11 @@
     <h1>
         People
     </h1>
-    <div id="people" data-onload data-source="testPeople">
+    <div id="people" data-apply="onload" data-source="testPeople">
         <template data-class="person">
-            <h2 data-value="value.Name"></h2>
-            <p data-value="value.Age"></p>
-            <p data-htmlvalue="value.Bio"></p>
+            <h2 data-text="value.Name"></h2>
+            <p data-text="value.Age"></p>
+            <p data-html="value.Bio"></p>
 
             <div class="skills" data-source="value.Skills" data-emptyclass="hidden">
                 <h2>
@@ -49,8 +49,8 @@
                 </h2>
 
                 <template data-class="skill">
-                    <h3 data-value="value.Title"></h3>
-                    <p data-value="value.Description"></p>
+                    <h3 data-text="value.Title"></h3>
+                    <p data-text="value.Description"></p>
                 </template>
             </div>
         </template>
