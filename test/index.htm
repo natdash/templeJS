@@ -9,13 +9,23 @@
 </head>
 <body>
     <h1>
-        Simple Object Array
+        People
     </h1>
     <div data-onload data-source="testPeople">
-        <template id="item" data-class="hello">
+        <template data-class="person">
             <h2 data-value="value.Name"></h2>
             <p data-value="value.Age"></p>
             <p data-htmlvalue="value.Bio"></p>
+            <div data-source="value.Skills">
+                <h2>
+                    Skills
+                </h2>
+                <template data-class="skill">
+                    <h3 data-value="value.Title"></h3>
+                    <p data-value="value.Description"></p>
+                </template>
+            </div>
+            <hr />
         </template>
     </div>
 </body>
