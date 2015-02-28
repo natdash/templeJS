@@ -14,7 +14,7 @@ function Skill(title, description)
 
 var testPeople =
 [
-	new Person('Nick Bedford', 27, 'Nick is a photographer.'),
+	new Person('Nick Bedford', undefined, 'Nick is a photographer.'),
     new Person('Nathaniel Dash', 27, '<p>Nathaniel is a JavaScript programmer.</p><p>He also has a dog named Cooper.</p>')
 ];
 

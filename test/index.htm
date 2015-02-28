@@ -37,24 +37,19 @@
     <h1>
         People
     </h1>
-    <div id="people" data-apply="onload" data-source="testPeople">
-        <template data-class="person">
-            <h2 data-text="value.Name"></h2>
-            <p data-text="value.Age"></p>
-            <p data-html="value.Bio"></p>
-
-            <div class="skills" data-source="value.Skills" data-emptyclass="hidden">
-                <h2>
-                    Skills
-                </h2>
-
-                <template data-class="skill">
-                    <h3 data-text="value.Title"></h3>
-                    <p data-text="value.Description"></p>
-                </template>
-            </div>
-        </template>
-    </div>
+    <div id="people" data-apply="onload" data-source="testPeople" data-template="person"></div>
     <input type="button" value="Fill With Other People" onclick="$('#people').retemple(otherTestPeople)" />
+    <template id="person" data-class="person">
+        <h2 data-text="value.Name"></h2>
+        <p data-text="value.Age || 'No Age Specified'"></p>
+        <p data-html="value.Bio"></p>
+        <div class="skills" data-source="value.Skills" data-template="skill" data-emptyclass="hidden">
+            <h2>Skills</h2>
+        </div>
+    </template>
+    <template id="skill" data-class="skill">
+        <h3 data-text="value.Title"></h3>
+        <p data-text="value.Description"></p>
+    </template>
 </body>
 </html>
